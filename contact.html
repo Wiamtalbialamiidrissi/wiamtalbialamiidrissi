@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PV1G0fQNHSOD2xbE+QkPxCAF1NEevoEH3S10sibVcOQVnN" crossorigin="anonymous">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing:border-box ;
+            font-family: 'Poppins',sans-serif;
+        }
+        .contact{
+            position: relative;
+            min-height: 100vh;
+            padding: 50px 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .contact .content{
+            max-width: 800px;
+            text-align: center;
+            margin-bottom: 30px; 
+        }
+        .contact .content h2{
+            font-size: 36px;
+            font-weight: 500;
+            color: rgb(69, 66, 71);
+            margin-bottom: 10px; 
+        }
+        .contact .content p{
+            font-weight: 300;
+            color: rgb(69, 66, 71);
+        }
+        .container{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container .contactinfo{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+        }
+        .container .contactinfo .box{
+            margin-bottom: 20px; /* Added */
+            display: flex;
+            align-items: center;
+        }
+        .container .contactinfo .box .icon{
+            min-width: 60px;
+            height: 60px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            font-size: 22px;
+            margin-right: 20px; 
+        }
+        .container .contactinfo .box .text{
+            color: #333;
+            font-size: 16px;
+        }
+        .container .contactinfo .box .text h3{
+            font-weight: 500;
+            color: rgb(69, 66, 71);
+            margin-bottom: 5px; 
+        }
+        .contactform{
+            width: 40%;
+            padding: 40px;
+            background: #fff;
+        }
+        .contactform h2{
+            font-size: 30px;
+            color:#333;
+            font-weight: 500;
+            margin-bottom: 20px; 
+        }
+        .contactform .inputbox{
+            position: relative;
+            width:100%;
+            margin-bottom: 20px; 
+        }
+        .contactform .inputbox input,
+        .contactform .inputbox textarea {
+            width: 100%;
+            padding: 5px 0;
+            font-size: 16px;
+            margin: 10px 0;
+            border: none;
+            border-bottom: 2px solid #333;
+            outline: none;
+            resize: none;
+        }
+        .contactform .inputbox span{
+            position: absolute;
+            left: 0;
+            padding: 5px 0;
+            font-size: 16px;
+            margin: 10px 0;
+            pointer-events: none;
+            transition: 0.5s;
+            color: #666;
+        }
+        .contactform .inputbox input:focus ~ span,
+        .contactform .inputbox input:valid ~ span,
+        .contactform .inputbox textarea:focus ~ span,
+        .contactform .inputbox textarea:valid ~ span {
+            color: #666;
+            font-size: 12px;
+            transform: translateY(-20px);
+        }
+        .contactform .inputbox input[type="submit"]{
+            width: 100px;
+            background: #b97979;
+            color: #fff;
+            border: none;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <section class="contact">
+        <div class="content">
+            <h2>Contact us</h2>
+            <p>If you have any suggestions for improving our website or services,<br>or if there's something specific you'd like to see in our collection of Moroccan caftans,<br>we'd love to hear from you. Your input helps us enhance your shopping experience</p>
+        </div>
+        <div class="container">
+            <div class="contactinfo">
+                <div class="box">
+                    <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>MARRAKECH <br> rue:2000000<br> residence cliopatra</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>wiamtai2002@gmail.com</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>PHONE</h3>
+                        <p>0621347038</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contactform">
+                <form>
+                    <h2> Send message</h2>
+                    <div class="inputbox">
+                        <input type="text" name="" required="required">
+                        <span> Full name</span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="text" name="" required="required">
+                        <span>Email</span>
+                    </div>
+                    <div class="inputbox">
+                        <textarea required="required"></textarea>
+                        <span>Type your message...</span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="submit" name=""  value="Send" required="required">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
