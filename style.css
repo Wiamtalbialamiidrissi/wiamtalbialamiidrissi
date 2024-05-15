@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box ;
+}
+.body{
+        font-family: "Farsan", cursive;
+        font-weight: 400;
+        font-style: normal;
+      
+}
+
+  
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+.logo img{
+    width: 150px;
+}
+nav{
+    flex:1 ;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style: none;
+}
+nav ul li{
+    display: inline;
+    margin-right: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(8, 8, 8);
+}
+.container{
+    max-width: 1100 px;
+    margin:20px auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.row{
+  display: flex;  
+  align-items: center;
+  justify-content: space-around;
+  
+}
+.collone-1{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.collone-1 img{
+    width: 100%;
+    padding: 40px 0;
+}
+.collone-1 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+.collone-1 button{
+    display: none;
+    text-decoration: none;
+    padding: 10px 30px;
+    background:rgb(172, 55, 39) ;
+    color: rgb(247, 15, 15);
+    border-radius: 30px;
+    margin-top: 20px;
+    transition:background 0.5s;
+    cursor:pointer;
+}
+.collone-1 button:hover{
+    background-color: rgb(171, 223, 166);}
+p{
+    color: brown;
+}
+.header-section{
+    margin-top: -20px;
+    background:radial-gradient(rgb(252, 172, 192),rgba(241, 236, 191, 0.13)) ;
+}
+/*style de la section des categories*/
+ .categories{
+    margin: 70px 0;
+   }
+.collone-3{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin: auto;
+}
+.collone-3 img{
+    width: 100%;
+}
+.container h2{
+    text-align: center;
+    font-size: 1,8rem;
+    color: rgb(173, 163, 163);
+    margin: 50px 0;
+}
+/*<!--only the best-->*/
+.collone-4{
+    flex-basis: 25%;
+    min-width: 200px;
+    padding: 15px;
+}
+.collone-4 img{
+    width: 30%;
+}
+
