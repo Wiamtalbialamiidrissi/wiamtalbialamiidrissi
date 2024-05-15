@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+   :root{
+    --first-color: #e7445a;
+    --bg-color: #DDDDDD;
+    --white-color: #FFFFFF;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+body{
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    height: 100vh;
+    background: #e7445a;
+}
+.register-container{
+    left:100;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    width: 350px;
+    height: 100vh;
+    text-align: center;
+    align-items: center;
+}
+.form-icon
+.form-title
+.input-box{
+    z-index:5;
+}
+.form-icon{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+ 
+    
+}
+.form-icon i{
+    font-size:26px;
+    cursor: pointer;
+}
+.form-icon .icone-1{
+    color: #FFFFFF;
+}
+form-icon .icone-2{
+    color: var(--first-color);
+}
+.form-title{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    color: #e7445a;
+}
+.input-box{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin:25px ;
+    padding: 5px;
+
+}
+.input-field{
+    font-size: 16px;
+    width: 100%;
+    height: 50px;
+    padding-top: 10px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--first-color);
+    outline: none;
+}
+.input-field:focus, .input-field:valid{
+    border-bottom:2px solid var(--first-color);
+     transition: border-bottom 0.3s ease;
+}
+.input-box label{
+    position:absolute;
+    margin-top: 10px;
+    left: 0;
+    transform: translateY(-50%);
+    font-weight :500;
+    color: var(--first-color);
+    transition-delay: all .3s ease;
+}
+.input-field:focus ~ label, .input-field:valid ~ label{
+    top:-5%;
+    transform: translateY(-15%);
+    font-size: 14px;
+}
+.input-submit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 100%;
+    height: 50px;
+    font-size: 15px;
+    background-color: var(--first-color);
+    color: #FFFFFF;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.bx-arrow-back{
+    transform: rotate(188deg);
+
+}
+.input-submit:hover{
+    gap: 15px;
+}
+.form-button-links{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+.form-bottom-links a{
+    font-weight:500;
+    color: var(--first-color);
+}
+
+
+
+    </style>
+</head>
+<body>
+<div class="register-container">
+    <div class="form-icon">
+        <a style="color: black;" href="">
+<i class="bx bx-user-plus  icon-1"> </i>
+        </a>
+        
+        <a style="color: black;" href="">
+ <i class="bx bx-log-in-circle icon-2" id="login-icon-btn"></i>
+        </a>
+       
+    </div>
+    <div class="from-title">
+        <span>create account<br> girlies</span>
+    </div>
+    <div>
+        <div class="input-box">
+            <input type="text"  id="user" class="input-field"  autocomplete="off" required>
+            <label for="user">Username</label>
+        </div>
+        <div class="input-box">
+            <input type="text"  id="reg-email" class="input-field"  autocomplete="off" required>
+            <label for="reg-email">email</label>
+        </div>
+        <div class="input-box">
+            <input type="password"  id="reg-password" class="input-field"autocomplete="off" required>
+            <label for="reg-password">password</label>
+        </div>
+        <div>
+            <div class="input-box">
+                <input type="password"  id="confirm-password" class="input-field"autocomplete="off" required>
+                <label for="confirm-password">Confirm password</label>
+            </div>
+        <div>
+            <span style="color: #e7445a;" id="input-submit">
+
+            </span>
+        </div>
+    
+    <div class="input-box">
+        <button   class="input-submit" onclick="add()"> 
+            <span>Sign-up</span>
+            <a style="color: black;" href="">
+                 <i class="bx bx-arrow-back"></i>
+            </a>
+           
+        </button>
+    </div>
+    <div class="form-button-links">
+        <a href="#" id="register-btn">sign-in</a>
+        <a href="#">Terms & policy</a>
+    </div>
+</div>  
+<script>
+function add() {
+    var username = document.getElementById('user').value;
+    var email = document.getElementById('reg-email').value;
+    var password = document.getElementById('reg-password').value;
+    var confirmPassword = document.getElementById('confirm-password').value;
+
+    var errorElement = document.getElementById('input-submit');
+
+    if (password.length < 8) {
+        errorElement.innerText = 'Password must be at least 8 characters long';
+        return; 
+    }
+
+    if (password !== confirmPassword) {
+        errorElement.innerText = 'Passwords do not match';
+        return; 
+    }
+
+   
+}
+        </script> 
+</body>
+</html>

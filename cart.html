@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="product1.html">
+    <title>Checkout</title>
+    <style>
+        #product-details {
+            text-align: center;
+        }
+        #product-image {
+            max-width: 300px;
+            max-height: 300px;
+            margin: 0 auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>your cart girlie</h1>
+    <div id="product choosen">
+        <h2>Product Details</h2>
+        <img id="product" src="file:///C:/Users/Destock%20Afric/Desktop/KOLCHI%20HNA/caftan1-removebg-preview.png" alt="Product Image">
+        <p id="name">name:brown: </p>
+        <p id="price">price:20000: </p>
+    </div>
+    <div id="product choosen">
+        <h2>Product Details</h2>
+        <img id="product" src="file:///C:/Users/Destock%20Afric/Desktop/KOLCHI%20HNA/caftan2-Photoroom.png-Photoroom.png" alt="Product Image">
+        <p id="name">name:blue: </p>
+        <p id="price">price:>345678DH: </p>
+    </div>
+    <div id="product choosen">
+        <h2>Product Details</h2>
+        <img id="product" src="file:///C:/Users/Destock%20Afric/Desktop/KOLCHI%20HNA/CAFTAN3-Photoroom.png-Photoroom.png" alt="Product Image">
+        <p id="name">name:orange: </p>
+        <p id="price">price:35454656DH: </p>
+    </div>
+    <div id="product choosen">
+        <h2>Product Details</h2>
+        <img id="product" src="file:///C:/Users/Destock%20Afric/Downloads/CAFTAN4-Photoroom.png-Photoroom.png" alt="Product Image">
+        <p id="name">name:pink: </p>
+        <p id="price">price:4000000000: </p>
+    </div>
+    <div id="product choosen">
+        <h2>Product Details</h2>
+        <img id="product" src="file:///C:/Users/Destock%20Afric/Downloads/CAFTAN5-Photoroom.png-Photoroom.png" alt="Product Image">
+        <p id="name">name:modern: </p>
+        <p id="price">price:20000: </p>
+    </div>
+    <div id="product choosen">
+        <h2>Product Details</h2>
+        <img id="product" src="file:///C:/Users/Destock%20Afric/Downloads/caftan6-Photoroom.png-Photoroom.png" alt="Product Image">
+        <p id="name">name:modern: </p>
+        <p id="price">price:20000: </p>
+    </div>
+    <div id="product choosen">
+        <h2>Product Details</h2>
+        <img id="product" src="file:///C:/Users/Destock%20Afric/Downloads/caftan7-Photoroom.png-Photoroom.png" alt="Product Image">
+        <p id="name">name:redwine: </p>
+        <p id="price">price:20000: </p>
+    </div>
+    <div id="product choosen">
+        <h2>Product Details</h2>
+        <img id="product" src="file:///C:/Users/Destock%20Afric/Downloads/caftan8-Photoroom.png-Photoroom.png" alt="Product Image">
+        <p id="name">name:brown: </p>
+        <p id="price">price:20000: </p>
+    </div>
+    <div id="product choosen">
+        <h2>Product Details</h2>
+        <img id="product" src="file:///C:/Users/Destock%20Afric/Downloads/caftan9-Photoroom.png-Photoroom.png" alt="Product Image">
+        <p id="name">name:brown: </p>
+        <p id="price">price:20000: </p>
+    </div>
+    <div id="product choosen">
+        <h2>Product Details</h2>
+        <img id="product" src="file:///C:/Users/Destock%20Afric/Downloads/CAFTAN10-Photoroom.png-Photoroom.png" alt="Product Image">
+        <p id="name">name:brown: </p>
+        <p id="price">price:20000: </p>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const params = new URLSearchParams(window.location.search);
+            const productName = params.get('productName');
+            const productPrice = params.get('productPrice');
+            const productImage = params.get('productImage');
+            document.getElementById('product-image').src = productImage;
+
+            document.getElementById('product-name').textContent += productName;
+            document.getElementById('product-price').textContent += productPrice;
+            document.getElementById('product-image').src = productImage;
+        });
+    </script>
+</body>
+</html>

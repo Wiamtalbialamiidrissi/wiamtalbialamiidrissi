@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my products</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+         * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        body {
+            height: 100%;
+        }
+
+        .pheading {
+            text-align: center;
+            margin: 20px 0;
+            color: palevioletred;
+        }
+
+        .sec1 {
+            padding: 10px 5%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .product-card {
+            background: rgb(247, 244, 244);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 20px;
+            width: calc(33.33% - 10px); 
+            width: 250px;
+        }
+
+        .product-card img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border-radius: 5px;
+        }
+
+        .product-card .title {
+            font-size: 14px; 
+            font-weight: 700;
+            color: brown;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .product-card .price {
+            font-size: 12px; 
+            font-weight: bold;
+            color: rgb(83, 8, 8);
+            margin-top: 8px;
+            text-align: center;
+        }
+
+        .product-card .add-to-cart {
+            display: block;
+            width: 100%;
+            text-align: center;
+            margin-top: 12px;
+            padding: 6px 12px;
+            background-color: palevioletred;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="pheading">My Products</h1>
+    <div class="sec1">
+        <div class="product-card">
+            <img src="file:///C:/Users/Destock%20Afric/Desktop/KOLCHI%20HNA/caftan1-removebg-preview.png" alt="morrocan brown caftan" width="180px">
+            <div class="title" data-name="Moroccan Brown Caftan" data-price="2000000dh">Moroccan Brown Caftan</div>
+            <div class="price">2000000dh</div>
+            <form method="post" action="cart.html">
+                <input type="hidden" name="productName" value="Moroccan Brown Caftan">
+                <input type="hidden" name="productPrice" value="2000000dh">
+            <button class="add-to-cart" type="submit">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="file:///C:/Users/Destock%20Afric/Desktop/KOLCHI%20HNA/caftan2-Photoroom.png-Photoroom.png" alt="Product 2" width="300px">
+            <div class="title"> morrocan blue caftan</div>
+            <div class="price">345678DH</div>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="file:///C:/Users/Destock%20Afric/Desktop/KOLCHI%20HNA/CAFTAN3-Photoroom.png-Photoroom.png" alt="Product 2" width="210px">
+            <div class="title"> morrocan orange caftan</div>
+            <div class="price">35454656DH</div>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="file:///C:/Users/Destock%20Afric/Downloads/CAFTAN4-Photoroom.png-Photoroom.png" alt="Product 2" width="250px" >
+            <div class="title"> morrocan pink caftan</div>
+            <div class="price">40000000DH</div>
+            <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="file:///C:/Users/Destock%20Afric/Downloads/CAFTAN5-Photoroom.png-Photoroom.png" alt="Product 2" width="200px" >
+                <div class="title"> morrocan modern caftan</div>
+                <div class="price">1000000000DH</div>
+                <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="file:///C:/Users/Destock%20Afric/Downloads/caftan6-Photoroom.png-Photoroom.png" alt="Product 2" width="250px" >
+                    <div class="title"> morrocan beige caftan</div>
+                    <div class="price">235656DH</div>
+                    <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="file:///C:/Users/Destock%20Afric/Downloads/caftan7-Photoroom.png-Photoroom.png" alt="Product 2" width="2500px" >
+                        <div class="title"> morrocan REDWINE caftan</div>
+                        <div class="price">333399900DH</div>
+                        <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="file:///C:/Users/Destock%20Afric/Downloads/caftan8-Photoroom.png-Photoroom.png" alt="Product 2" width="150px" >
+                            <div class="title"> morrocan caftan with selham</div>
+                            <div class="price">200070DH</div>
+                            <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                            <div class="product-card">
+                                <img src="file:///C:/Users/Destock%20Afric/Downloads/caftan9-Photoroom.png-Photoroom.png" alt="Product 2" width="200px" >
+                                <div class="title"> morrocan  caftan</div>
+                                <div class="price">323346DH</div>
+                                <button class="add-to-cart">Add to Cart</button>
+                                </div>
+                                <div class="product-card">
+                                    <img src="file:///C:/Users/Destock%20Afric/Downloads/CAFTAN10-Photoroom.png-Photoroom.png" alt="Product 2" width="220px" >
+                                    <div class="title"> morrocan caftan</div>
+                                    <div class="price">100000006DH</div>
+                                    <button class="add-to-cart">Add to Cart</button>
+                                    </div>
+                                    <div class="product-card">
+                                        <img src="file:///C:/Users/Destock%20Afric/Downloads/CAFTAN11-Photoroom.png-Photoroom.png" alt="Product 2" width="200px" >
+                                        <div class="title"> Princesse caftan</div>
+                                        <div class="price">300000000DH</div>
+                                        <button class="add-to-cart">Add to Cart</button>
+                                        </div>
+                                        <div class="product-card">
+                                            <img src="file:///C:/Users/Destock%20Afric/Downloads/CAFTAN12-Photoroom.png-Photoroom.png" alt="Product 2" width="200px" >
+                                            <div class="title"> morrocan royal caftan</div>
+                                            <div class="price">1000000000DH</div>
+                                            <button class="add-to-cart">Add to Cart</button>
+                                            </div>
+                                           
+                                        
+ 
+    </div>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        document.querySelectorAll('.add-to-cart').forEach(button => {
+            button.addEventListener('click', () => {
+                const card = button.closest('.product-card');
+                const productName = card.querySelector('.title').textContent;
+                const productPrice = card.querySelector('.price').textContent;
+    
+               
+                const form = document.createElement('form');
+                form.setAttribute('method', 'post');
+                form.setAttribute('action', 'checkout.html'); 
+                
+                
+                const nameInput = document.createElement('input');
+                nameInput.setAttribute('type', 'hidden');
+                nameInput.setAttribute('name', 'productName');
+                nameInput.setAttribute('value', productName);
+                
+                const priceInput = document.createElement('input');
+                priceInput.setAttribute('type', 'hidden');
+                priceInput.setAttribute('name', 'productPrice');
+                priceInput.setAttribute('value', productPrice);
+                
+               
+                form.appendChild(nameInput);
+                form.appendChild(priceInput);
+                
+              
+                document.body.appendChild(form);
+                form.submit();
+            });
+        });
+    </script>
+    
+</body>
+</html>

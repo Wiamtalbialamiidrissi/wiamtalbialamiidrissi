@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wiamlogin</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+<div class="form-container" onsubmit="return login()">
+    <div class="fluid-container">
+        <img src="" alt="" id="fluid" class="fluid-1 fluid-animate">
+    </div>
+
+    <div class="login-container">
+        <div class="form-icon">
+            <i class="bx bx-log-in-circle icon-1"></i>
+            <i class="bx bx-user-plus icon-2" id="register-icon-btn"></i>
+        </div>
+        <div class="from-title">
+            <span>Welcome <br>Back girlies</span>
+        </div>
+        <div>
+            <div class="input-box">
+                <input type="text" id="email" class="input-field" autocomplete="off" required>
+                <label for="email">email</label>
+            </div>
+            <div class="input-box">
+                <input type="password" id="password" class="input-field" autocomplete="off" required>
+                <label for="password">password</label>
+            </div>
+            <div>
+         
+                <span  style="color: #e7445a; padding: 10px;" id="s2"></span> 
+            </div>
+            
+        
+            <div class="input-box">
+                <button class="input-submit"> 
+                    <span>Sign-in</span><i class="bx bx-arrow-back"></i>
+                </button>
+            </div>
+            <div class="form-button-links">
+                <a href="#" id="register-btn">sign-in</a>
+                <a href="#">Forgot your password girlie?</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+       
+       var users = [
+            { username: 'user1', password: 'pass1' },
+            { username: 'user2', password: 'pass2' },
+        ];
+ 
+        function login(event) {
+            event.preventDefault(); 
+            
+            var emailValue = document.getElementById('email').value;
+            var passwordValue = document.getElementById('password').value;
+            
+            if (emailValue === '') {
+                document.getElementById('s2').innerText = 'E-MAIL must be filled out';
+                return false;
+            } else if (passwordValue === '') {
+                document.getElementById('s2').innerText = 'Password must be filled out';
+                return false;
+            }
+            
+            for (var i = 0; i < users.length; i++) {
+                if (users[i].username === emailValue && users[i].password === passwordValue) {
+                  
+                    document.getElementById('s2').innerText = '';
+                    
+                    return true;
+                }
+            }
+            
+            document.getElementById('s2').innerText = 'Password and E-MAIL do not match';
+            return false;
+        }
+    </script>
+</body>
+</html>
